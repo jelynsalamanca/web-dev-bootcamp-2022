@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Demo</title>
+</head>
+
+<body>
+    <h1>Login</h1>
+    <form action="/tacos">
+        <p>
+            <label for="username">Enter a Username</label>
+            <input id="username" type="text" placeholder="username" name="username">
+        </p>
+        <p>
+            <label for="password">Enter a Password</label>
+            <input id="password" type="password" placeholder="password" name="password">
+        </p>
+        <p>
+            <label for="color">Enter a color</label>
+            <input type="color" id="color" name="color">
+        </p>
+        <p>
+            <label for="number">Enter a Number</label>
+            <input type="number" placeholder="enter a number" id="number" name="">
+        </p>
+        <p>
+            <label>
+                Enter your desired appointment
+                <input type="date">
+                <input type="time">
+            </label>
+        </p>
+        <!-- Works the same -->
+        <button>Submit</button>
+        <button type="submit">Submit</button>
+
+        <!-- Does not work as a button -->
+        <button type="button">Submit</button>
+
+        <!-- This is input button -->
+        <input type="submit">
+        <input type="submit" value="click me">
+    </form>
+    <hr>
+    <h2>Hijcaking Searches</h2>
+    <h3>Search Reddit</h3>
+    <form action="https://www.reddit.com/search">
+        <p>
+            <input type="text" name="q">
+            <button>Search Reddit</button>
+        </p>
+    </form>
+    <h3>Search Google</h3>
+    <form action="https://www.google.com/search">
+        <p>
+            <input type="text" name="q">
+            <button>Search Google</button>
+        </p>
+    </form>
+    <h3>Search Youtube</h3>
+    <form action="https://www.youtube.com/results">
+        <p>
+            <input type="text" name="search_query">
+            <button>Search Youtube</button>
+        </p>
+    </form>
+    <hr>
+    <h2>More Inputs</h2>
+    <form action="/birds">
+        <input type="checkbox" name="agree_tos" id="agree" checked>
+        <label for="agree">I agree to everything</label>
+        <p>
+            <label for="xs">XS:</label>
+            <input type="radio" name="size" id="xs" value="xs">
+
+            <label for="s">S:</label>
+            <input type="radio" name="size" id="s" value="s">
+
+            <label for="m">M:</label>
+            <input type="radio" name="size" id="m" value="m">
+
+            <label for="l">L:</label>
+            <input type="radio" name="size" id="l" value="l">
+        </p>
+        <p>
+            <label for="meal">Please select an entree</label>
+            <select name="meal" id="meal">
+                <option value="">Please select an option</option>
+                <option value="fish">Fish</option>
+                <option value="veg">Vegetarian</option>
+                <option value="steak">Steak</option>
+            </select>
+        </p>
+        <button>Submit</button>
+    </form>
+</body>
+
+</html>
